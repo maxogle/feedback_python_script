@@ -1,0 +1,8 @@
+matplotlib==3.5.2
+ez_setup==0.9
+setuptools==57.4.0
+parselmouth==1.1.1
+numpy==1.22.4
+seaborn==0.11.2
+librosa==0.9.1
+soundfile==1.15.0
