@@ -12,17 +12,17 @@ avg = sum(root_mean_square) / len(root_mean_square)
 clipnum = 1
 clipnum2 = 1
 
-for i in root_mean_square:
+for i, in root_mean_square:
     if i >= (avg * 19):
-        start = i - 10_000
-        end = i + 10_000
+        start = float(i) - 20_000
+        end = float(i) + 20_000
         clipname = f"{soundfile}loud{clipnum}.wav"
         sf.write(clipname, [start, end], 44100, 'PCM_24')
         clipnum = clipnum+1
         print(f"event! {i}")
     elif i <= (avg * 0.001):
-        start = i - 10_000
-        end = i + 10_000
+        start = float(i) - 20_000
+        end = float(i) + 20_000
         clipname = f"{soundfile}quiet{clipnum2}.wav"
         sf.write(clipname, [start, end], 44100, 'PCM_24')
         clipnum2 = clipnum2+1
