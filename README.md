@@ -8,3 +8,7 @@ if you'd like to see the functionality for yourself simply run
 "python3 audio6.py" in the directory then follow the instructions of the CLI 
 
 if you then check the directory you'll see the program writing more files based on the data set it interprets 
+
+For a quick demonstration of the functionality follow the link below
+
+https://youtu.be/XeEkCFV5yGA
